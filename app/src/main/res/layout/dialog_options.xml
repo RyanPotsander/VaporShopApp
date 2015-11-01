@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add purchase"
+        android:id="@+id/btn_add_options"
+        style="?android:borderlessButtonStyle"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:textColor="@color/accent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit customer info"
+        android:id="@+id/btn_edit_options"
+        style="?android:borderlessButtonStyle"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:textColor="@color/primary" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:id="@+id/btn_close_option"
+        style="?android:borderlessButtonStyle"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:textColor="@color/secondary_accent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:id="@+id/btn_delete_options"
+        style="?android:borderlessButtonStyle"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:textColor="@color/primary_light" />
+</LinearLayout>

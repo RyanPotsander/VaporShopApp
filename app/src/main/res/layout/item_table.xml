@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_table"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_name"
+            android:layout_weight=".3"
+            android:hint="First Lastname"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_email"
+            android:layout_weight=".4"
+            android:hint="email@email.com"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_birthday"
+            android:layout_weight=".15"
+            android:hint="Dec 3"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_spent"
+            android:layout_weight=".15"
+            android:hint="$125.25"
+            android:layout_marginLeft="4dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/divider"
+        android:layout_below="@+id/linear_table"/>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':absnavigationdrawerlibrary', ':recyclerviewlibrary', ':cursorrecyclerviewadapter'

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="0dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardMaxElevation = "22.5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linear_top_test"
+            android:background="@color/cardview_light_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name Lastname"
+                    android:id="@+id/text_name_test"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="email@email.com"
+                    android:id="@+id/text_email_test"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/image_birthday"
+                android:src="@drawable/ic_cake_sec_accent"
+                android:background="@drawable/abc_btn_borderless_material"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/image_reward"
+                android:src="@drawable/ic_gift"
+                android:background="@drawable/abc_btn_borderless_material"
+                android:adjustViewBounds="true" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame_history_test"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linear_top_test"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/card_shadow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="History"
+                    android:layout_toLeftOf="@+id/button_settings_test"
+                    android:id="@+id/header_history"
+                    android:paddingLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/header_history"
+                    android:id="@+id/divider_test"
+                    android:background="@android:color/transparent" />
+
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/button_settings_test"
+                    android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+                    style="?android:borderlessButtonStyle"
+                    android:background="@drawable/abc_btn_borderless_material"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_settings_test"
+                    android:id="@+id/child_view"
+                    android:orientation="vertical"
+                    android:weightSum="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/child_view"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_totals_test">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_total_test"
+                        android:textSize="24sp"
+                        android:text="Total:"
+                        android:layout_marginLeft="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_total_test_num"
+                        android:textSize="24sp"
+                        android:textColor="@color/accent"
+                        android:paddingLeft="4dp" />
+
+                    </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
